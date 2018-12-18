@@ -29,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use('/i18n', I18n_routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
